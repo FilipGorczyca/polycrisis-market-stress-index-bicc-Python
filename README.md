@@ -58,12 +58,27 @@ Financial and macroeconomic series are published at mixed frequencies (daily mar
 * **Execution Logic:** Signal generated at close $t-1$ executes allocation for day $t$ ($S_{t-1} \in \{0, 1\}$), eliminating look-ahead bias.
 * **Transaction Costs:** `0.1%` brokerage fee deducted on every regime switch ($\vert{}S_{t-1} - S_{t-2}\vert{} = 1$).
 
-### Performance Summary
+### 1. Portfolio Equity Curve Comparison
+<p align="center">
+  <img src="./backtest_performance.png" alt="Portfolio Equity Curve Comparison (2020-2026)" width="100%">
+  <br>
+  <em>Figure 1: Cumulative portfolio value of the Tactical CSI Strategy (green, net of 0.1% transaction costs) vs. Passive Buy-and-Hold benchmark (red). Shaded areas indicate crisis regimes with 100% capital allocation to gold.</em>
+</p>
+
 | Strategy | Final Portfolio Value | Net Return | Total Trades |
 | :--- | ---: | ---: | :---: |
 | **Passive Buy-and-Hold (`Target_Asset`)** | 104,691.87 PLN | +4.69% | 1 |
 | **Tactical CSI Strategy (80th Percentile, $25.59\text{ pts}$)** | >120,000.00 PLN | >+20.00% | 46 |
 | **Tactical CSI Strategy (55th Percentile Peak)** | ~159,500.00 PLN | ~+59.50% | High-turnover |
+
+---
+
+### 2. Percentile Threshold Sensitivity Analysis (50th - 95th Percentile)
+<p align="center">
+  <img src="./sensitivity_analysis.png" alt="Sensitivity Analysis Across Percentile Thresholds" width="100%">
+  <br>
+  <em>Figure 2: Final portfolio capital across tested CSI percentile cutoffs (50% to 95%, step 5%) compared against the passive Buy-and-Hold baseline (104,691.87 PLN).</em>
+</p>
 
 *Sensitivity conclusion:* The CSI tactical strategy outperformed the passive Buy-and-Hold benchmark across the entire tested percentile spectrum (**50th to 95th percentile**). While lower thresholds (50%-55%) yielded higher ex-post nominal returns due to the secular bull market in gold, the 80th percentile threshold (`25.59 pts`) is recommended ex-ante to prevent over-trading on daily market noise.
 
