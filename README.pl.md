@@ -89,3 +89,6 @@ Dane wejściowe obejmowały trzy zbiory publikowane z różną częstotliwości�
 | :--- | :--- |
 | [`BICC_Market_Stress_Index_Backtest.ipynb`](./BICC_Market_Stress_Index_Backtest.ipynb) | Notatnik Jupyter zawierający kod w języku Python: scalanie szeregów czasowych `merge_asof`, analizę korelacji, kalkulację indeksu CSI, symulację portfelową oraz analizę wrażliwości. |
 | [`paper.pdf`](./paper.pdf) | Pełny 34-stronicowy raport konkursowy zawierający wprowadzenie teoretyczne, opis metodologiczny, wykresy oraz weryfikację hipotez badawczych. |
+| [`BICC_Daily_Markets_Anon.csv`](./BICC_Daily_Markets_Anon.csv) | Dzienne notowania rynkowe (`1 566` dni sesyjnych z lat 2020-2025, 21 kolumn). |
+| [`BICC_Weekly_Macro_Anon.csv`](./BICC_Weekly_Macro_Anon.csv) | Tygodniowe wskaźniki rynku pracy i stresu w systemie bankowym (`313` obserwacji). |
+| [`BICC_Monthly_Macro_Anon.csv`](./BICC_Monthly_Macro_Anon.csv) | Miesięczne odczyty inflacji CPI, produkcji przemysłowej oraz niepewności geopolitycznej (`216` wierszy). |
