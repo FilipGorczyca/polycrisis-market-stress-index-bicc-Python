@@ -89,3 +89,6 @@ Financial and macroeconomic series are published at mixed frequencies (daily mar
 | :--- | :--- |
 | [`BICC_Market_Stress_Index_Backtest.ipynb`](./BICC_Market_Stress_Index_Backtest.ipynb) | Jupyter Notebook containing asynchronous time-series merging, correlation heatmaps, CSI calculation, portfolio backtesting, and percentile sensitivity charts. |
 | [`paper.pdf`](./paper.pdf) | Full 34-page competition report (in Polish) with theoretical background, econometric methodology, and strategic recommendations. |
+| [`BICC_Daily_Markets_Anon.csv`](./BICC_Daily_Markets_Anon.csv) | Daily market quotes (`1,566` trading sessions, 2020-2025, 21 columns). |
+| [`BICC_Weekly_Macro_Anon.csv`](./BICC_Weekly_Macro_Anon.csv) | Weekly macroeconomic and banking stress indicators (`313` observations). |
+| [`BICC_Monthly_Macro_Anon.csv`](./BICC_Monthly_Macro_Anon.csv) | Monthly inflation, industrial production, and global uncertainty series (`216` rows). |
